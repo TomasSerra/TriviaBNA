@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <title>Futbol</title>
+</head>
+<body>
+
+    <div id="pregunta1">
+        <div class="contenido">
+            <img src="./img/logo.png" class="logo">
+            <h2 class="pregunta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ullam quae repudiandae voluptates, molestias earum ea?</h2>
+            <div class="contenedor-respuestas">
+                <button id="1" class="respuesta" onclick="correcta(1)"><div id="r1box1" class="rbox">1</div>Respuesta 1</button>
+                <button id="2" class="respuesta" onclick="incorrecta(2)"><div id="r1box2" class="rbox">2</div>Respuesta 2</button>
+                <button id="3" class="respuesta" onclick="incorrecta(3)"><div id="r1box3" class="rbox">3</div>Respuesta 3</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="pregunta2">
+        <div class="contenido">
+            <img src="./img/logo.png" class="logo">
+            <h2 class="pregunta">Unde ullam quae repudiandae voluptates, molestias earum ea?</h2>
+            <div class="contenedor-respuestas">
+                <button id="4" class="respuesta" onclick="incorrecta(4)"><div id="r2box1" class="rbox">1</div>Respuesta 1</button>
+                <button id="5" class="respuesta" onclick="correcta(5)"><div id="r2box2" class="rbox">2</div>Respuesta 2</button>
+                <button id="6" class="respuesta" onclick="incorrecta(6)"><div id="r2box3" class="rbox">3</div>Respuesta 3</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

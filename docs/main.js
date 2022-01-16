@@ -40,42 +40,36 @@ function correcta(numero)
         {
             r1box1.style.backgroundColor = '#1e8540';
             r1box1.style.fontSize = "28px";
-            r1box1.style.padding = "13px 18px"
             r1box1.innerHTML = "✓";
         }
         else if(numero == 2)
         {
             r1box2.style.backgroundColor = '#1e8540';
             r1box1.style.fontSize = "28px";
-            r1box2.style.padding = "13px 18px"
             r1box2.innerHTML = "✓";
         }
         else if(numero == 3)
         {
             r1box3.style.backgroundColor = '#1e8540';
             r1box3.style.fontSize = "28px";
-            r1box3.style.padding = "13px 18px"
             r1box3.innerHTML = "✓";
         }
         else if(numero == 4)
         {
             r2box1.style.backgroundColor = '#1e8540';
             r2box1.style.fontSize = "28px";
-            r2box1.style.padding = "13px 18px"
             r2box1.innerHTML = "✓";
         }
         else if(numero == 5)
         {
             r2box2.style.backgroundColor = '#1e8540';
             r2box2.style.fontSize = "28px";
-            r2box2.style.padding = "13px 18px"
             r2box2.innerHTML = "✓";
         }
         else if(numero == 6)
         {
             r2box3.style.backgroundColor = '#1e8540';
             r2box3.style.fontSize = "28px";
-            r2box3.style.padding = "13px 18px"
             r2box3.innerHTML = "✓";
         }
 
@@ -126,6 +120,16 @@ function incorrecta(numero)
         }
         numero = numero.toString();
         document.getElementById(numero).style.backgroundColor = '#de3731';
+        var elems = document.getElementsByClassName('correcta');
+        setTimeout(() => {
+            for(var i = 0; i < elems.length; i++)
+            {
+                elems[i].style.backgroundColor = '#31de6b';
+            }
+            setTimeout(() => {
+                window.location.href="./futbolTexto.html";
+              }, 2000);
+          }, 1000);
         gano = false;
         termino = true;
     }

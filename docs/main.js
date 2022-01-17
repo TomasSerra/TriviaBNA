@@ -18,6 +18,9 @@ window.onload = function()
     {
         start();
     }
+    else{
+        document.getElementById("body").style.height = screen.height;
+    }
 };
 
 function start()
@@ -156,5 +159,4 @@ function cambiarPantalla()
     {
         window.location.href="./pistolasTexto.html";
     }
-
 }

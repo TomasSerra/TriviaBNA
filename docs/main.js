@@ -14,7 +14,10 @@ var numAleatorio = 0;
 
 window.onload = function() 
 {
-    start();
+    if(document.getElementById("vacio").innerHTML == "trivia")
+    {
+        start();
+    }
 };
 
 function start()
@@ -79,7 +82,7 @@ function correcta(numero)
         termino = true;
 
         setTimeout(() => {
-            window.location.href="./futbolTexto.html";
+            cambiarPantalla();
           }, 2000);
     }
 }
@@ -127,10 +130,31 @@ function incorrecta(numero)
                 elems[i].style.backgroundColor = '#31de6b';
             }
             setTimeout(() => {
-                window.location.href="./futbolTexto.html";
+                cambiarPantalla();
               }, 2000);
           }, 1000);
         gano = false;
         termino = true;
     }
+}
+
+function cambiarPantalla()
+{
+    if(document.getElementById("juego").innerHTML == "futbol")
+    {
+        window.location.href="./futbolTexto.html";
+    }
+    else if(document.getElementById("juego").innerHTML == "golf")
+    {
+        window.location.href="./golfTexto.html";
+    }
+    else if(document.getElementById("juego").innerHTML == "pelotas")
+    {
+        window.location.href="./pelotasTexto.html";
+    }
+    else if(document.getElementById("juego").innerHTML == "pistolas")
+    {
+        window.location.href="./pistolasTexto.html";
+    }
+
 }

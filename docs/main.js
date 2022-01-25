@@ -204,8 +204,8 @@ function cambiarPantalla()
     {
         window.location.href="./pelotasTexto.html";
     }
-    else if(document.getElementById("juego").innerHTML == "pistolas")
+    else if(document.getElementById("juego").innerHTML == "diana")
     {
-        window.location.href="./pistolasTexto.html";
+        window.location.href="./dianaTexto.html";
     }
 }
